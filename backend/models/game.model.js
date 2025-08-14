@@ -10,8 +10,8 @@ const gameSchema = mongoose.Schema({
     required: true,
   },
   availability: {
-    type: String,
-    default: "Available",
+    type: Boolean,
+    default: true,
   },
 });
 

@@ -18,10 +18,6 @@ function SignUpPage() {
         password: ""
     });
 
-    // if (authUser) {
-    //     return <Navigate to={"/"}/>
-    // }
-
     function validateForm() { 
         if (!formData.firstName.trim()) return toast.error("First Name is required!");
         if (!formData.lastName.trim()) return toast.error("Last Name is required!");

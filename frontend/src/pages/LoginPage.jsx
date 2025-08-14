@@ -15,10 +15,6 @@ function LoginPage() {
         password: ""
     });
 
-    // if (authUser) {
-    //     return <Navigate to={"/"}/>
-    // }
-
     function validateForm() {
         if (!formData.email.trim()) return toast.error("Email is required!");
         if (!formData.password.trim()) return toast.error("Password is required");

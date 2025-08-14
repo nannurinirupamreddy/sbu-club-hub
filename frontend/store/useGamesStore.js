@@ -7,7 +7,7 @@ const useGamesStore = create((set) => ({
   games: null,
   getGames: async () => {
     try {
-      const gamesInfo = axiosInstance.get("/games");
+      const res = await axiosInstance.get("/games");
       set({ games: res.data });
     } catch (error) {
       console.log("error in getting games react", error);

@@ -11,7 +11,7 @@ const isAdmin = require("../middleware/isAdmin");
 const router = express.Router();
 
 router.post("/", addGame);
-router.get("/", protectRoute, isAdmin, getGames);
+router.get("/", protectRoute, getGames);
 router.put("/:id", protectRoute, isAdmin, editGame);
 router.delete("/:id", protectRoute, isAdmin, deleteGame);
 
